@@ -1,8 +1,9 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import * as React from 'react'
-import { Menu, Sparkles } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
   Sheet,
@@ -23,21 +24,9 @@ const navLinks = [
   { label: 'FAQ', href: '#faq' },
 ]
 
-function BrandLogo({ className }: { className?: string }) {
-  return (
-    <span className={cn('relative block', className)}>
-      <Image
-        src="/logo.png"
-        alt="dlvyne logo"
-        width={32}
-        height={32}
-        className="size-full rounded-full object-contain"
-        priority
-      />
-    </span>
-  )
+const BrandLogo = ({ className }: { className?: string }) => {
+  return <Image src="/logo.png" alt="dlvyne logo" width={32} height={32} className={cn('relative block', className)} priority />
 }
-
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = React.useState(false)
@@ -59,37 +48,37 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#" className="flex items-center gap-2" aria-label="dlvyne home">
+        <Link href="#" className="flex items-center gap-2" aria-label="dlvyne home">
           <BrandLogo className="size-8" />
           <span className="font-heading text-lg font-semibold tracking-tight">
             dlvyne
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="rounded-[var(--radius)] px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
           <ThemeToggle />
-          <a
+          <Link
             href="#login"
             className="rounded-[var(--radius)] px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             Log in
-          </a>
+          </Link>
           <Button
             className="h-10 px-5"
             nativeButton={false}
-            render={<a href="#contact">Start a project</a>}
+            render={<Link href="#contact">Start a project</Link>}
           />
         </div>
 
@@ -120,12 +109,12 @@ export function SiteHeader() {
                   <SheetClose
                     key={link.href}
                     render={
-                      <a
+                      <Link
                         href={link.href}
                         className="rounded-[var(--radius)] px-3 py-2.5 text-base font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
                       >
                         {link.label}
-                      </a>
+                      </Link>
                     }
                   />
                 ))}
@@ -133,18 +122,18 @@ export function SiteHeader() {
               <div className="mt-auto flex flex-col gap-2 p-4">
                 <SheetClose
                   render={
-                    <a
+                    <Link
                       href="#login"
                       className="rounded-[var(--radius)] px-3 py-2.5 text-center text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
                     >
                       Log in
-                    </a>
+                    </Link>
                   }
                 />
                 <Button
                   className="h-11 w-full text-base"
                   nativeButton={false}
-                  render={<a href="#contact">Start a project</a>}
+                  render={<Link href="#contact">Start a project</Link>}
                 />
               </div>
             </SheetContent>
