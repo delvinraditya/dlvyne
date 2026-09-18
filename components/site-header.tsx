@@ -23,6 +23,22 @@ const navLinks = [
   { label: 'FAQ', href: '#faq' },
 ]
 
+function BrandLogo({ className }: { className?: string }) {
+  return (
+    <span className={cn('relative block', className)}>
+      <Image
+        src="/logo.png"
+        alt="dlvyne logo"
+        width={32}
+        height={32}
+        className="size-full rounded-full object-contain"
+        priority
+      />
+    </span>
+  )
+}
+
+
 export function SiteHeader() {
   const [scrolled, setScrolled] = React.useState(false)
 
@@ -44,9 +60,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="#" className="flex items-center gap-2" aria-label="dlvyne home">
-          <span className="flex size-8 items-center justify-center rounded-[var(--radius)]">
-            <Image src="/logo.png" alt="dlvyne logo" width={24} height={24} className="size-full object-contain p-0 m-0 h-full w-full rounded-full" />
-          </span>
+          <BrandLogo className="size-8" />
           <span className="font-heading text-lg font-semibold tracking-tight">
             dlvyne
           </span>
@@ -92,10 +106,7 @@ export function SiteHeader() {
             <SheetContent side="right" className="w-4/5 max-w-xs">
               <SheetHeader>
                 <SheetTitle className="flex items-center gap-2">
-                  <span className="flex size-7 items-center justify-center rounded-[var(--radius)] bg-primary text-primary-foreground">
-                    <Image src="/logo.png" alt="dlvyne logo" width={24} height={24} className="size-full object-contain p-0 m-0 h-full w-full rounded-full" />
-           
-                  </span>
+                  <BrandLogo className="size-7" />
                   <span className="font-heading text-lg font-semibold tracking-tight">
                     dlvyne
                   </span>
