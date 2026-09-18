@@ -103,6 +103,7 @@ export function SiteHeader() {
               >
                 {navLinks.map((link) => (
                   <SheetClose 
+                  nativeButton={false}
                   key={link.href}
                   render={
                     <Link
@@ -117,6 +118,7 @@ export function SiteHeader() {
               </nav>
               <div className="mt-auto flex flex-col gap-2 p-4">
                 <SheetClose
+                nativeButton={false}
                   render={
                     <Link
                       href="#login"
