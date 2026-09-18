@@ -1,5 +1,5 @@
 import { Sparkles, Camera, Send, AtSign, Mail } from 'lucide-react'
-
+import { BrandLogo } from './brandlogo'
 const footerNav = [
   {
     heading: 'Studio',
@@ -43,8 +43,8 @@ export function SiteFooter() {
         <div className="grid grid-cols-2 gap-10 md:grid-cols-4 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div className="col-span-2 flex flex-col gap-4 md:col-span-4 lg:col-span-1">
             <a href="#" className="flex items-center gap-2" aria-label="dlvyne home">
-              <span className="flex size-8 items-center justify-center rounded-[var(--radius)] bg-primary text-primary-foreground">
-                <Sparkles className="size-4" />
+              <span className="flex size-8 items-center justify-center rounded-[var(--radius)]">
+                <BrandLogo className="size-8" />
               </span>
               <span className="font-heading text-lg font-semibold tracking-tight">
                 dlvyne

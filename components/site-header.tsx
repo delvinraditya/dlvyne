@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { BrandLogo } from './brandlogo'
 import * as React from 'react'
 import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -23,11 +24,6 @@ const navLinks = [
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
 ]
-
-const BrandLogo = ({ className }: { className?: string }) => {
-  return <Image src="/logo.png" alt="dlvyne logo" width={32} height={32} className={cn('relative block', className)} priority />
-}
-
 export function SiteHeader() {
   const [scrolled, setScrolled] = React.useState(false)
 
@@ -106,17 +102,17 @@ export function SiteHeader() {
                 aria-label="Mobile primary"
               >
                 {navLinks.map((link) => (
-                  <SheetClose
-                    key={link.href}
-                    render={
-                      <Link
-                        href={link.href}
-                        className="rounded-[var(--radius)] px-3 py-2.5 text-base font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
-                      >
-                        {link.label}
-                      </Link>
-                    }
-                  />
+                  <SheetClose 
+                  key={link.href}
+                  render={
+                    <Link
+                      href={link.href}
+                      className="rounded-[var(--radius)] px-3 py-2.5 text-base font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                    >
+                      {link.label}
+                    </Link>
+                  }
+                />
                 ))}
               </nav>
               <div className="mt-auto flex flex-col gap-2 p-4">
