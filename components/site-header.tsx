@@ -65,12 +65,6 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-2 md:flex">
           <ThemeToggle />
-          <Link
-            href="#login"
-            className="rounded-[var(--radius)] px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-          >
-            Log in
-          </Link>
           <Button
             className="h-10 px-5"
             nativeButton={false}
@@ -102,32 +96,21 @@ export function SiteHeader() {
                 aria-label="Mobile primary"
               >
                 {navLinks.map((link) => (
-                  <SheetClose 
-                  nativeButton={false}
-                  key={link.href}
-                  render={
-                    <Link
-                      href={link.href}
-                      className="rounded-[var(--radius)] px-3 py-2.5 text-base font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
-                    >
-                      {link.label}
-                    </Link>
-                  }
-                />
+                  <SheetClose
+                    nativeButton={false}
+                    key={link.href}
+                    render={
+                      <Link
+                        href={link.href}
+                        className="rounded-[var(--radius)] px-3 py-2.5 text-base font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                      >
+                        {link.label}
+                      </Link>
+                    }
+                  />
                 ))}
               </nav>
               <div className="mt-auto flex flex-col gap-2 p-4">
-                <SheetClose
-                nativeButton={false}
-                  render={
-                    <Link
-                      href="#login"
-                      className="rounded-[var(--radius)] px-3 py-2.5 text-center text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      Log in
-                    </Link>
-                  }
-                />
                 <Button
                   className="h-11 w-full text-base"
                   nativeButton={false}
