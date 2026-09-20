@@ -24,7 +24,6 @@ const footerNav = [
     links: [
       { label: 'FAQ', href: '#faq' },
       { label: 'Contact', href: '#contact' },
-      { label: 'Log in', href: '#login' },
     ],
   },
 ]
