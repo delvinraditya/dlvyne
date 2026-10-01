@@ -37,7 +37,7 @@ export function Hero() {
 
           <p className="max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
             Dlvyne is a creative brand crafting graphic design, photography, and
-            website. I shape modern solutions for your business.
+            website. Solving your problems into modern solutions.
           </p>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
