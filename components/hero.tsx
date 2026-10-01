@@ -24,28 +24,25 @@ export function Hero() {
             variant="secondary"
             className="rounded-full bg-accent text-accent-foreground"
           >
-            Creative studio · Design · Photo · Web
+            Dlvyne - Make It Fine
           </Badge>
 
           <h1
             id="hero-heading"
             className="text-balance text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
           >
-            Creative work that feels{' '}
-            <span className="text-primary">soft, adaptive</span> and
-            unmistakably yours
+            Turn your problems into   <span className="text-primary"> Solutions </span> with{' '}
+            Creative, Adaptive, and Proper works
           </h1>
 
           <p className="max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            dlvyne is a creative brand crafting graphic design, photography, and
-            web experiences. We shape brands that move with you — expressive,
-            considered, and built to be seen.
+            Dlvyne is a creative brand crafting graphic design, photography, and
+            website. I shape modern solutions for your business.
           </p>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <Button className="h-12 px-6 text-base" nativeButton={false} render={<a href="#contact" />}>
-              <span>Start a project</span>
-              <ArrowRight data-icon="inline-end" />
+              <span>Let's Make It Fine</span>
             </Button>
             <Button
               variant="outline"
@@ -53,14 +50,13 @@ export function Hero() {
               nativeButton={false}
               render={<a href="#works" />}
             >
-              <PlayCircle data-icon="inline-start" />
-              <span>See our work</span>
+              <span>See My Works</span>
             </Button>
           </div>
 
           <p className="flex items-center gap-2 text-sm text-muted-foreground">
             <CheckCircle2 className="size-4 text-primary" />
-            Free discovery call · No commitment required
+            Free Consultation · Just Email Me :)
           </p>
         </div>
 
