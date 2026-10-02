@@ -3,7 +3,7 @@ import { BrandLogo } from './brandlogo'
 
 const footerNav = [
   {
-    heading: 'Brand',
+    heading: 'Studio',
     links: [
       { label: 'About', href: '#about' },
       { label: 'Services', href: '#services' },
@@ -73,7 +73,7 @@ export function SiteFooter() {
                 </span>
               </a>
               <p className="max-w-xs text-pretty text-sm leading-relaxed text-muted-foreground">
-                A creative brand for graphic design, photography and website. Solving your problems into modern solutions.
+                A creative studio for graphic design, photography and website. Solving your problems into modern solutions.
               </p>
               <div className="flex items-center gap-2">
                 {socials.map((social) => (
