@@ -17,7 +17,6 @@ const footerNav = [
       { label: 'Graphic design', href: '#services' },
       { label: 'Photography', href: '#services' },
       { label: 'Web development', href: '#services' },
-      { label: 'Brand identity', href: '#services' },
     ],
   },
   {
@@ -73,7 +72,7 @@ export function SiteFooter() {
                 </span>
               </a>
               <p className="max-w-xs text-pretty text-sm leading-relaxed text-muted-foreground">
-                A creative studio for graphic design, photography and website. Solving your problems into modern solutions.
+                A creative studio for graphic design, photography and website. Solving your problems in creative way.
               </p>
               <div className="flex items-center gap-2">
                 {socials.map((social) => (
