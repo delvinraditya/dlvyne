@@ -2,7 +2,7 @@ import { SiteHeader } from '@/components/site-header'
 import { Hero } from '@/components/hero'
 import { Services } from '@/components/services'
 import { Works } from '@/components/works'
-import { Testimonials } from '@/components/testimonials'
+import { Skills } from '@/components/skills'
 import { Faq } from '@/components/faq'
 import { FinalCta } from '@/components/final-cta'
 import { SiteFooter } from '@/components/site-footer'
@@ -15,7 +15,7 @@ export default function Page() {
         <Hero />
         <Services />
         <Works />
-        <Testimonials />
+        <Skills />
         <Faq />
         <FinalCta />
       </main>
