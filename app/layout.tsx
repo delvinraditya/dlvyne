@@ -16,7 +16,7 @@ const fontBody = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'dlvyne — Creative studio for design, photography & web',
+  title: 'dlvyne — Creative studio',
   description:
     'dlvyne is a creative brand crafting soft, adaptive and expressive work across graphic design, photography, and web development.',
   generator: 'v0.app',
