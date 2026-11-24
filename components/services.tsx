@@ -63,7 +63,7 @@ export function Services() {
             id="services-heading"
             className="mt-5 text-3xl font-bold tracking-tight sm:text-4xl"
           >
-            One studio. Every touchpoint your brand needs.
+            One Partner. Endless Solutions. 
           </h2>
           <p className="mt-4 text-pretty text-lg text-muted-foreground">
             Design, photography and web from the same team, so your brand looks
