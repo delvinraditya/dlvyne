@@ -14,24 +14,14 @@ type Tool = {
 
 const webStack: Tool[] = [
   {
-    name: 'HTML',
-    mark: 'H5',
-    role: 'Clean, accessible structure that search engines and screen readers understand.',
-  },
-  {
-    name: 'CSS',
-    mark: 'C3',
-    role: 'Responsive layouts that follow your brand on every screen.',
-  },
-  {
-    name: 'JavaScript',
-    mark: 'JS',
-    role: 'Interactions that feel smooth and respond the way people expect.',
+    name: 'Native',
+    mark: 'W',
+    role: 'Web development with HTML, CSS, and JavaScript.',
   },
   {
     name: 'Next.js',
     mark: 'Nx',
-    role: 'Fast page loads and a solid base for search visibility.',
+    role: 'React framework for building web applications more efficiently.',
   },
   {
     name: 'Supabase',
@@ -41,7 +31,7 @@ const webStack: Tool[] = [
   {
     name: 'GitHub',
     mark: 'Gh',
-    role: 'Project management system that track every changes.',
+    role: 'Version control system for documentation and code.',
   },
   {
     name: 'Vercel',
@@ -198,11 +188,11 @@ export function Skills() {
             blurb="A modern stack, from the first line of HTML to a live database."
             className="lg:col-span-7"
           >
-            <ol className="mt-6 flex flex-col gap-2">
+            <ul className="mt-6 flex flex-col gap-2">
               {webStack.map((tool, i) => (
                 <ToolRow key={tool.name} tool={tool} />
               ))}
-            </ol>
+            </ul>
           </Panel>
 
           <div className="flex flex-col gap-5 lg:col-span-5">
@@ -233,9 +223,9 @@ export function Skills() {
             href="#contact"
             className="font-medium text-foreground underline decoration-primary decoration-2 underline-offset-4 transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
-            Tell us about it
+            Tell me about it
           </a>{' '}
-          and we will choose the right tools for the job.
+          and i will choose the right tools for the job.
         </p>
       </div>
     </section>
