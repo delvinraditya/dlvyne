@@ -80,8 +80,8 @@ export function Hero() {
 
               <p className="max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
                 dlvyne is a creative studio for graphic design, photography and
-                web. Tell us what is not working, and we turn it into work that
-                looks sharp, feels consistent and earns trust at first glance.
+                web. Turn your problem into work that
+                looks clean, consistent and earns trust at first glance.
               </p>
 
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -121,9 +121,6 @@ export function Hero() {
               <h2 className="font-heading text-base font-semibold">
                 What&apos;s holding your brand back?
               </h2>
-              <p className="mt-1 text-sm text-muted-foreground">
-                Pick a problem to see how we fix it.
-              </p>
 
               <ul className="mt-4 flex flex-col gap-2">
                 {fixes.map((item, i) => {
